@@ -1,0 +1,123 @@
+//Variables
+$color-white: #fff;
+$color-primary-dark-cyan: hsl(185, 75%, 39%);
+$color-primary-vary-dark-desaturated-blue: hsl(229, 23%, 23%);
+$color-primary-grayish-blue: hsl(227, 10%, 46%);
+$color-neutral-dark-gray: hsl(0, 0%, 59%);
+$font-size: 1.125rem;
+$font-primary: 700 2rem Kumbh Sans;
+$font-neutral: 400 $font-size Kumbh Sans;
+
+//Reset
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+//Base
+body {
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: top -30vh left -50vw, bottom -30vh right -50vw;
+    background-color: $color-primary-dark-cyan;
+
+    @media screen and (min-width: 1024px) {
+        background-size: contain;
+        background-position: top -30vh left -20vw, bottom -30vh right -20vw;
+    }
+
+    height: 100vh;
+  font-family: Kumbh Sans, sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+//Main CSS
+.container{
+border-radius: 15px;
+position: relative;
+}
+
+.card{
+    &__header{
+        border-radius: 15px 15px 0 0;
+        background-color: $color-white;
+        display: grid;
+        place-items: center;
+    }
+    &__meta{
+        background-color: $color-white;
+        position: relative;
+    }
+    &__footer{
+        background-color: $color-white;
+        border-top: 1px solid $color-neutral-dark-gray;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+.user{
+    &__banner{
+        border-radius: 15px 15px 0 0;
+    }
+    &__image{
+        border-radius: 50%;
+        position: relative;
+        top: -58px;
+        width: fit-content;
+        display: grid;
+        place-items: center;
+        border: 7px solid $color-white;
+        background-color: $color-white;
+        img{
+            position: relative;
+            border-radius: 50%;
+        }
+    }
+
+    &__info{
+        position: relative;
+        top: -40px;
+        text-align: center;
+    }
+
+    &__info *:not(.user__location){
+        display: inline-block;
+        position: relative;
+    }
+
+    &__name{
+        color: $color-primary-vary-dark-desaturated-blue;
+    }
+
+    &__age{
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+    &__location{
+        padding-top: 10px;
+        font-size: $font-size;
+    }
+    &__age, &__location{
+        color: $color-primary-grayish-blue;
+    }
+    &__data h2{
+        color: $color-primary-vary-dark-desaturated-blue;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    &__data p{
+        color: $color-neutral-dark-gray;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+}

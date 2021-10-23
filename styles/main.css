@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top -30vh left -50vw, bottom -30vh right -50vw;
+  background-color: #19a2ae;
+  height: 100vh;
+  font-family: Kumbh Sans, sans-serif;
+  display: grid;
+  place-items: center;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: contain;
+    background-position: top -30vh left -20vw, bottom -30vh right -20vw;
+  }
+}
+
+.container {
+  border-radius: 15px;
+  position: relative;
+}
+
+.card__header {
+  border-radius: 15px 15px 0 0;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+}
+.card__meta {
+  background-color: #fff;
+  position: relative;
+}
+.card__footer {
+  background-color: #fff;
+  border-top: 1px solid #969696;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  border-radius: 0 0 15px 15px;
+}
+
+.user__banner {
+  border-radius: 15px 15px 0 0;
+}
+.user__image {
+  border-radius: 50%;
+  position: relative;
+  top: -58px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  border: 7px solid #fff;
+  background-color: #fff;
+}
+.user__image img {
+  position: relative;
+  border-radius: 50%;
+}
+.user__info {
+  position: relative;
+  top: -40px;
+  text-align: center;
+}
+.user__info *:not(.user__location) {
+  display: inline-block;
+  position: relative;
+}
+.user__name {
+  color: #2d3248;
+}
+.user__age {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.user__location {
+  padding-top: 10px;
+  font-size: 1.125rem;
+}
+.user__age, .user__location {
+  color: #6a6f81;
+}
+.user__data h2 {
+  color: #2d3248;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.user__data p {
+  color: #969696;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+}/*# sourceMappingURL=main.css.map */
