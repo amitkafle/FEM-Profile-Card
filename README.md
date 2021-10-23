@@ -26,7 +26,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/)
-- Live Site URL: [Github Pages](https://amitkafle.github.io/FEM-Profile-Card-Component)
+- Live Site URL: [Github Pages](https://amitkafle.github.io/FEM-Profile-Card)
 
 ### My process
 ### Built with
